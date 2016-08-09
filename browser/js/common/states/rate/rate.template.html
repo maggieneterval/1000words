@@ -1,0 +1,31 @@
+<div class="container" id="sceneView">
+  <div class="row">
+    <div class="col-xs-2">
+      <a ng-click="prev()"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    </div>
+    <div class="col-xs-8">
+      <img src= "{{currentScene.photoUrl}}" />
+    </div>
+    <div class="col-xs-2">
+      <a ng-click="next()"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-2">
+    </div>
+    <div class="slider">
+      <div class="col-xs-2">
+        <p>I don't want this</p>
+      </div>
+      <div class="col-xs-4">
+        <input type="range" min="-2" max="2" step="1" ng-model="rating" />
+      </div>
+       <div class="col-xs-2">
+         <p>I definitely want this</p>
+      </div>
+       <div class="col-xs-2">
+      </div>
+    </div>
+  </div>
+</div>

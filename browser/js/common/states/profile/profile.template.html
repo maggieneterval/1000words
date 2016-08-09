@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>My profile</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Location</h3>
+    <div class="col-xs-2">
+      <h4>Rural</h4>
+    </div>
+    <div class="col-xs-8">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{profileData.location.mean}}"
+        aria-valuemin="-2" aria-valuemax="2" style="width:{{ ((profileData.location.mean + 2) * 25) }}%">
+          <!-- <span>mean: {{ profileData.location.mean.toPrecision(2) }} stdev: {{ profileData.location.stdev.toPrecision(2) }}</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+       <h4>Urban</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Extroversion</h3>
+    <div class="col-xs-2">
+      <h4>Let's stay in</h4>
+    </div>
+    <div class="col-xs-8">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{profileData.extroversion.mean}}"
+        aria-valuemin="-2" aria-valuemax="2" style="width:{{ ((profileData.extroversion.mean + 2) * 25) }}%">
+         <!--  <span>mean: {{ profileData.extroversion.mean.toPrecision(2) }} stdev: {{ profileData.extroversion.stdev.toPrecision(2) }}</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+       <h4>Let's go out</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Extravagance</h3>
+    <div class="col-xs-2">
+      <h4>Let's save money</h4>
+    </div>
+    <div class="col-xs-8">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{profileData.extravagance.mean}}"
+        aria-valuemin="-2" aria-valuemax="2" style="width:{{ ((profileData.extravagance.mean + 2) * 25) }}%">
+          <!-- <span>mean: {{ profileData.extravagance.mean.toPrecision(2) }} stdev: {{ profileData.extravagance.stdev.toPrecision(2) }}</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+       <h4>Let's spend money</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Family</h3>
+    <div class="col-xs-2">
+      <h4>No kids</h4>
+    </div>
+    <div class="col-xs-8">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{profileData.family.mean}}"
+        aria-valuemin="-2" aria-valuemax="2" style="width:{{ ((profileData.extroversion.mean + 2) * 25) }}%">
+         <!--  <span>mean: {{ profileData.family.mean.toPrecision(2) }} stdev: {{ profileData.family.stdev.toPrecision(2) }}</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+       <h4>Lots of kids</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3>Partnership</h3>
+    <div class="col-xs-2">
+      <h4>50s gender roles</h4>
+    </div>
+    <div class="col-xs-8">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="{{profileData.partnership.mean}}"
+        aria-valuemin="-2" aria-valuemax="2" style="width:{{ ((profileData.partnership.mean + 2) * 25) }}%">
+          <!-- <span>mean: {{ profileData.partnership.mean.toPrecision(2) }} stdev: {{ profileData.partnership.stdev.toPrecision(2) }}</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+       <h4>Shared responsibilities</h4>
+    </div>
+  </div>

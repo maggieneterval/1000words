@@ -2,8 +2,12 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #fdfdfd;
+img {
+  width: 100%;
+}
+
+.glyphicon {
+  font-size: 8em;
 }
 
 @mixin clearfix {
@@ -19,5 +23,51 @@ body {
   margin: 0 auto;
 }
 
-@import 'directives/main';
-@import 'login/main';
+#sceneView {
+  display: block;
+  text-align: center;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+#login-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.homepage {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.matches {
+  margin-bottom: 20px;
+}

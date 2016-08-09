@@ -1,6 +1,10 @@
 'use strict';
-var db = require('./_db');
+const db = require('./_db');
 module.exports = db;
 
-var User = require('./models/user');
+const User = require('./models/user');
+const Rank = require('./models/rank');
+const Scene = require('./models/scene');
 
+Rank.belongsTo(User);
+Rank.belongsTo(Scene);

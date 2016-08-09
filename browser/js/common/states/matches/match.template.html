@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>My matches</h1>
+    </div>
+  </div>
+  <div class="row matches" ng-repeat="match in matches">
+    <div class="col-xs-6">
+      <img id="matchimage" src="{{ match.photoUrl }}" />
+    </div>
+    <div class="col-xs-6">
+      <h3>Username: {{ match.username }}</h3>
+      <h4>Email: {{ match.email }}</h4>
+    </div>
+  </div>
+</div>
